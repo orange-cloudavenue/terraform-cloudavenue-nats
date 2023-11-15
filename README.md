@@ -14,7 +14,7 @@ module "nat_rules" {
       "name"                      = "example-dnat"
       "edge_gateway_name"         = cloudavenue_edgegateway.example.name
       "rule_type"                 = "DNAT"
-      "description"               = "description DNAT example Updated!!"
+      "description"               = "description DNAT example"
       "external_address"          = "89.32.25.10"
       "internal_address"          = "4.11.11.11"
       "priority"                  = 25
