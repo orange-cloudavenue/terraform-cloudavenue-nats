@@ -4,6 +4,8 @@ This is sample readme for terraform module
 # TF code base## Introduction
 This is sample readme for terraform module
 
+## Usage
+Basic usage of this module is as follows:
 ```hcl
 module "nat_rules" {
   source = "."
@@ -29,20 +31,6 @@ module "nat_rules" {
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3 |
 | <a name="requirement_cloudavenue"></a> [cloudavenue](#requirement\_cloudavenue) | 0.14.0 |
 
-## Usage
-Basic usage of this module is as follows:
-
-```hcl
-module "example" {
-	 source  = "<module-path>"
-
-	 # Required variables
-	 rules  = 
-
-	 # Optional variables
-	 global_rules  = []
-}
-```
 ## Resources
 
 | Name | Type |
@@ -52,7 +40,6 @@ module "example" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_global_rules"></a> [global\_rules](#input\_global\_rules) | n/a | <pre>list(object( {<br>    name                      = string<br>    edge_gateway_id           = optional(string)<br>    edge_gateway_name         = optional(string)<br>    enabled                   = optional(bool)<br>    description               = optional(string)<br>    rule_type                 = string<br>    external_address          = string<br>    internal_address          = string<br>    dnat_external_port        = optional(string)<br>    snat_destination_address  = optional(string)<br>    priority                  = optional(number)<br>    firewall_match            = optional(string)<br>  }))</pre> | `[]` | no |
 | <a name="input_rules"></a> [rules](#input\_rules) | n/a | <pre>list(object( {<br>    name                      = string<br>    edge_gateway_id           = optional(string)<br>    edge_gateway_name         = optional(string)<br>    enabled                   = optional(bool)<br>    description               = optional(string)<br>    rule_type                 = string<br>    external_address          = string<br>    internal_address          = string<br>    dnat_external_port        = optional(string)<br>    snat_destination_address  = optional(string)<br>    priority                  = optional(number)<br>    firewall_match            = optional(string)<br>  }))</pre> | n/a | yes |
 ## Outputs
 

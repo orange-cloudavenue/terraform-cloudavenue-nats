@@ -1,7 +1,3 @@
-# Project: NGP
-# Author: Lisa Lewitanski
-# Date: 2023-10-26
-
 terraform {
   required_providers {
     cloudavenue = {

@@ -13,5 +13,5 @@ variable "rules" {
     priority                  = optional(number)
     firewall_match            = optional(string)
   }))
-  nullable = true
+  nullable = false
 }
