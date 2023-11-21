@@ -29,13 +29,13 @@ module "nat_rules" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.3 |
-| <a name="requirement_cloudavenue"></a> [cloudavenue](#requirement\_cloudavenue) | 0.14.0 |
+| <a name="requirement_cloudavenue"></a> [cloudavenue](#requirement\_cloudavenue) | ~> 0.14.0 |
 
 ## Resources
 
 | Name | Type |
 |------|------|
-| [cloudavenue_edgegateway_nat_rule.example](https://registry.terraform.io/providers/orange-cloudavenue/cloudavenue/0.14.0/docs/resources/edgegateway_nat_rule) | resource |
+| [cloudavenue_edgegateway_nat_rule.nat-rule](https://registry.terraform.io/providers/orange-cloudavenue/cloudavenue/latest/docs/resources/edgegateway_nat_rule) | resource |
 ## Inputs
 
 | Name | Description | Type | Default | Required |

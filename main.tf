@@ -1,4 +1,4 @@
-resource "cloudavenue_edgegateway_nat_rule" "example" {
+resource "cloudavenue_edgegateway_nat_rule" "nat-rule" {
   for_each = {for idx, query in var.rules: idx => query}
     name                      = each.value.name 
     edge_gateway_name         = each.value.edge_gateway_name
