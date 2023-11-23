@@ -3,7 +3,7 @@ terraform {
   required_providers {
     cloudavenue = {
       source  = "orange-cloudavenue/cloudavenue"
-      version = "~> 0.14.0"
+      version = "~> 0.15.3"
     }
   }
 }
