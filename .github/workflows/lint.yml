@@ -5,6 +5,7 @@ name: Lint
 # Optionally, you can turn it on using a schedule for regular testing.
 on:
     workflow_dispatch:
+    pull_request:
 
 # Testing only needs permissions to read the repository contents.
 permissions:
