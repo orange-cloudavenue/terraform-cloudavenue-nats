@@ -4,11 +4,13 @@ name: Add CHANGELOG for dependabot changes
 
 on:
     workflow_dispatch:
+
 permissions:
   pull-requests: write
   issues: write
   repository-projects: write
   contents: write
+
 jobs:
   dependabot:
     runs-on: ubuntu-latest
