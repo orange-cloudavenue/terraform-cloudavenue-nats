@@ -14,4 +14,5 @@ variable "rules" {
     firewall_match            = optional(string)
   }))
   nullable = false
+  description = "Nat configuration rules"
 }
