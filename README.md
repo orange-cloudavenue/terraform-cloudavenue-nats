@@ -1,8 +1,8 @@
 # TF code base## Introduction
-This is sample readme for terraform module
+This is sample readme for terraform-cloudavenue-nats
 
 # TF code base## Introduction
-This is sample readme for terraform module
+This is sample readme for terraform-cloudavenue-nats
 
 ## Usage
 Basic usage of this module is as follows:
