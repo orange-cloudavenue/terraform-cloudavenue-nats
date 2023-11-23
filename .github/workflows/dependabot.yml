@@ -1,5 +1,11 @@
+name: Dependabot
 version: 2
 updates:
+
+on:
+  pull_request:
+    paths:
+      - '**.tf'
 
 - package-ecosystem: github-actions
   directory: "/"
