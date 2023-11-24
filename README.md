@@ -1,10 +1,16 @@
-# TF code base## Introduction
-This is sample readme for terraform-cloudavenue-nats
+# Terraform cloudavenue NAT module
 
-# TF code base## Introduction
-This is sample readme for terraform-cloudavenue-nats
+This is the NAT module using cloudavenue Provider.  
+Its allows you to configure the NAT configurations.
+
+Useful links:
+
+* [Cloud Avenue Provider documentation](https://registry.terraform.io/providers/orange-cloudavenue/cloudavenue/latest/docs)
+* [Terraform Documentation](https://www.terraform.io/docs/language/index.html)
+
 
 ## Usage
+
 Basic usage of this module is as follows:
 ```hcl
 module "nat_rules" {
@@ -45,3 +51,13 @@ module "nat_rules" {
 
 No outputs.
 <!-- END_AUTOMATED_TF_DOCS_BLOCK -->
+
+## Contributing
+
+This provider is open source and contributions are welcome.
+
+If you want to contribute to this provider, please read the [contributing guidelines](CONTRIBUTING.md).
+
+You may also report issues or feature requests on the [GitHub issue tracker](https://github.com/orange-cloudavenue/terraform-cloudavenue-nats/issues/new/choose).
+
+You can consult a [listing of resources and datasources](cmd/listing/resource-ca.md).
