@@ -14,8 +14,8 @@ Useful links:
 Basic usage of this module is as follows:
 ```hcl
 module "nat_rules" {
-  source = "."
-  rules = [
+  source = "orange-cloudavenue/nats/cloudavenue"
+  rules  = [
     {
       "name"                      = "example-dnat"
       "edge_gateway_name"         = cloudavenue_edgegateway.example.name
@@ -24,6 +24,15 @@ module "nat_rules" {
       "external_address"          = "89.32.25.10"
       "internal_address"          = "4.11.11.11"
       "priority"                  = 25
+    },
+    {
+      "name"                      = "example-snat"
+      "edge_gateway_name"         = cloudavenue_edgegateway.example.name
+      "rule_type"                 = "SNAT"
+      "description"               = "description SNAT example"
+      "external_address"          = "89.32.25.10"
+      "internal_address"          = "11.11.11.0/24"
+      "priority"                  = 10
     }
   ]
 }
