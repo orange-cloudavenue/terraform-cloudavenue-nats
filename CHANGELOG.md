@@ -2,6 +2,7 @@
 
 ### :dependabot: **Dependencies**
 
+* deps: bumps actions/cache from 3.3.2 to 3.3.3 (GH-29)
 * deps: bumps actions/download-artifact from 3.0.2 to 4.0.0 (GH-26)
 * deps: bumps actions/setup-go from 4.0.1 to 4.1.0 (GH-20)
 * deps: bumps actions/setup-go from 4.1.0 to 5.0.0 (GH-25)
