@@ -2,7 +2,7 @@ terraform {
   required_providers {
     cloudavenue = {
       source  = "orange-cloudavenue/cloudavenue"
-      version = "~> 0.14.0"
+      version = ">= 0.20.0"
     }
   }
 }
@@ -46,13 +46,13 @@ module "nat_rules" {
   source = "./../.."
   rules = [
     {
-      "name"                      = "example-dnat"
-      "edge_gateway_name"         = cloudavenue_edgegateway.example.name
-      "rule_type"                 = "DNAT"
-      "description"               = "description DNAT example"
-      "external_address"          = "89.32.25.10"
-      "internal_address"          = "4.11.11.11"
-      "priority"                  = 25
+      "name"              = "example-dnat"
+      "edge_gateway_name" = cloudavenue_edgegateway.example.name
+      "rule_type"         = "DNAT"
+      "description"       = "description DNAT example"
+      "external_address"  = "89.32.25.10"
+      "internal_address"  = "4.11.11.11"
+      "priority"          = 25
     }
   ]
 }
