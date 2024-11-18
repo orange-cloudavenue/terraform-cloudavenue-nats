@@ -1,0 +1,3 @@
+```release-note:dependency
+deps: bumps provider/cloudavenue from 0.15.3 to 0.16.0 minimum version
+```
