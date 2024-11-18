@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "cloudavenue" {
-  org      = "my_org"
+  org      = "cav01ev01ocb0001234"
   user     = "my_user"
   password = "my_password"
 }
