@@ -10,6 +10,7 @@
 * deps: bumps actions/setup-go from 4.1.0 to 5.0.0 (GH-25)
 * deps: bumps actions/upload-artifact from 3 to 4 (GH-27)
 * deps: bumps dependabot/fetch-metadata from 1.6.0 to 2.2.0 (GH-35)
+* deps: bumps provider/cloudavenue from 0.15.3 to 0.16.0 minimum version (GH-37)
 * deps: bumps softprops/action-gh-release from 1 to 2 (GH-33)
 
 ## 0.0.1 (November 27, 2023)
