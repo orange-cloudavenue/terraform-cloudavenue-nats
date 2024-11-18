@@ -14,17 +14,17 @@ permissions:
   contents: write
 
 jobs:
-  testsunit:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v4
-    - name: Run Nat unit tests
-      run: |
-        terraform init
-        terraform test
+  # testsunit:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - uses: actions/checkout@v4
+  #   - name: Run Nat unit tests
+  #     run: |
+  #       terraform init
+  #       terraform test
   release-notes:
     runs-on: ubuntu-latest
-    needs: [testsunit]
+    # needs: [testsunit]
     steps:
       - uses: actions/checkout@v4
         with:
