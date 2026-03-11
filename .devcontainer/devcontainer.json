@@ -1,0 +1,39 @@
+{
+	"name": "Cloudavenue Terraform",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Set *default* container specific settings.json values on container create.
+			"settings": {},
+			"extensions": [
+				"hashicorp.terraform"
+			]
+		}
+	},
+	"runArgs": [
+		"--platform=linux/amd64"
+	],
+	"postStartCommand": "task install ; task init",
+	"remoteUser": "vscode",
+	"containerUser": "vscode",
+	"containerEnv": {
+		"CLOUDAVENUE_VDC_VALIDATION": "false",
+		"IS_MODULE": "true",
+		"HOME": "/home/vscode",
+		// Username
+		"CLOUDAVENUE_USER": "${localEnv:CLOUDAVENUE_USER}",
+		// Password
+		"CLOUDAVENUE_PASSWORD": "${localEnv:CLOUDAVENUE_PASSWORD}",
+		// Organization
+		"CLOUDAVENUE_ORG": "${localEnv:CLOUDAVENUE_ORG}",
+		// Netbackup user
+		"NETBACKUP_USER": "${localEnv:NETBACKUP_USER}",
+		// Netbackup password
+		"NETBACKUP_PASSWORD": "${localEnv:NETBACKUP_PASSWORD}"
+	},
+	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+	"workspaceFolder": "/workspace"
+}
